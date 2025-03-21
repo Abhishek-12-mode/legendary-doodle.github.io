@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavors of India</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff6f61; /* Coral */
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .region-section {
+            margin-bottom: 40px;
+        }
+
+        .region-section h2 {
+            font-size: 2em;
+            color: #ff6f61;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 10px;
+        }
+
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .food-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .food-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .food-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .food-card p {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .food-card img {
+            width: 100%;
+            border-radius: 8px;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Maintain aspect ratio and fill container */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        /* Responsive adjustments */
+        @media(max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+            .food-grid {
+                grid-template-columns: 1fr; /* Single column on small screens */
+            }
+            header h1{
+                font-size: 2em;
+            }
+            .region-section h2{
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flavors of India</h1>
+        <nav>
+              <a href="/index.html">Home</a>
+              <a href="/About.html">About</a>
+              <a href="/contact.html">Contact</a>
+          </nav>
+    </header>
+    <div class="container">
+        <section class="region-section">
+            <h2>North India</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="https://www.licious.in/blog/wp-content/uploads/2020/10/butter-chicken-.jpg" alt="Butter Chicken">
+                    <h3>Butter Chicken</h3>
+                    <p>Creamy and rich tomato-based chicken curry.</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://amritsr.com/wp-content/uploads/2021/04/cholle-bhature.jpeg" alt="Chole Bhature">
+                    <h3>Chole Bhature</h3>
+                    <p>Spicy chickpea curry served with fried bread.</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://cookingfromheart.com/wp-content/uploads/2020/09/Aloo-Paratha-4.jpg" alt="Aloo Paratha">
+                    <h3>Aloo Paratha</h3>
+                    <p>Wheat flatbread stuffed with spiced potatoes.</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2WY2YmIJtXrpmDToEHwJIOAcyBefjpFwXg&s" alt="Paneer Tikka">
+                    <h3>Paneer Tikka</h3>
+                    <p>Marinated and grilled cottage cheese.</p>
+                </div>
+            </div>
+        </section>
+        <section class="region-section">
+            <h2>South India</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="https://charminarhotel.com/wp-content/uploads/2024/07/Untitled-design-9.jpg" alt="Biryani">
+                    <h3>Biryani</h3>
+                    <p>Aromatic rice dish with meat or vegetables, spices, and herbs, originating from the Indian subcontinent.</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://t3.ftcdn.net/jpg/03/62/02/26/360_F_362022640_fZ6UM0JycJlFDdBiR1pYlNddKfdGvYwR.jpg" alt="Idli">
+                    <h3>Idli</h3>
+                    <p>Steamed rice and lentil cakes, soft and fluffy.</p>
+                </div>
+                <div class="food-card">
+                     <img src="https://bonmasala.com/wp-content/uploads/2022/12/medu-vada-recipe.webp" alt="Vada">
+                    <h3>Vada</h3>
+                    <p>Deep-fried lentil fritters, savory and crispy.</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2021/01/South-Indian-Sambar-Recipe.jpg" alt="Sambar">
+                    <h3>Sambar</h3>
+                    <p>Lentil-based vegetable stew, tangy and flavorful.</p>
+                </div>
+            </div>
+        </section>
+        <section class="region-section">
+            <h2>West India</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="https://i.ytimg.com/vi/Z9Y60u8tI9M/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBUxQ9rF89wkoNS-m5_S5LLvMqm3w" alt="Vada Pav">
+                    <h3>Vada Pav</h3>
+                    <p>Spicy potato fritter served in a bread bun.</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://t4.ftcdn.net/jpg/10/41/99/53/360_F_1041995329_Y948A29Hru2TXn8JgkWMwJmIVauyQ9jq.jpg" alt="Dhokla">
+                    <h3>Dhokla</h3>
+                    <p>Steamed savory cake made from fermented batter.</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.pexels.com/photos/5410400/pexels-photo-5410400.jpeg?cs=srgb&dl=pexels-saveurssecretes-5410400.jpg&fm=jpg" alt="Pav Bhaji">
+                    <h3>Pav Bhaji</h3>
+                    <p>Spicy vegetable mash served with buttered bread rolls.</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://www.indianveggiedelight.com/wp-content/uploads/2023/03/shrikhand-featured.jpg" alt="Shrikhand">
+                    <h3>Shrikhand</h3>
+                    <p>Sweet dish made of strained yogurt.</p>
+                </div>
+            </div>
+        </section>
+        <section class="region-section">
+            <h2>East India</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="https://www.licious.in/blog/wp-content/uploads/2022/08/shutterstock_1891229332.jpg" alt="Machher Jhol">
+                    <h3>Machher Jhol</h3>
+                    <p>Bengali fish curry, often made with mustard oil.</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/047/989/190/small/wooden-bowl-filled-with-dumplings-covered-in-sauce-photo.jpeg" alt="Momos">
+                    <h3>Momos</h3>
+                    <p>Steamed dumplings with various fillings.</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://cdn.uengage.io/uploads/28289/image-BSL8WN-1704795356.jpg" alt="Rasgulla">
+                    <h3>Rasgulla</h3>
+                    <p>Sweet cheese balls soaked in sugar syrup.</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://media.istockphoto.com/id/525416827/photo/pani-puri-golgappe-chat-item-india.jpg?s=612x612&w=0&k=20&c=tOCmN28AXHIe3SMBgszWU6PLUD6w6CU6q8yMdwSAKPw=" alt="Puchka (Golgappa)">
+                    <h3>Puchka (Golgappa)</h3>
+                    <p>Small, hollow, deep-fried bread filled with flavored water, potato, and chickpeas.</p>
+                </div>
+            </div>
+        </section>
+        <p  size="large">Lot more to come</p>
+    </div>
+    <footer>
+        <p>&copy; 2025 Flavors of India. All rights reserved.</p>
+    </footer>
+</body>
+</html>
